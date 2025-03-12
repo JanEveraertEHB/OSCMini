@@ -8,7 +8,7 @@ Add the OSCmini.py file to your RP pico device and add the following code in the
 from OSCmini import OSCmini
 
 # Start OSC listener with Wi-Fi credentials and port
-OSCmini.start("IOTB113", "2022IOTB113", "255.255.255.255", 9000)
+OSCmini.start([SSID], [SSID_PWD], "255.255.255.255", 9000)
 
 while True:
     message = OSCmini.getMessage()
